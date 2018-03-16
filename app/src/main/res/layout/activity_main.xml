@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.property.glory.propertyservice.activity.MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/main_select"
+                android:background="@color/white"
+                android:onClick="onTabClicked"
+                android:textColor="@drawable/main_color_select"
+                android:layout_weight="1"
+                android:text="主页"/>
+            <Button android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:onClick="onTabClicked"
+                android:textColor="@drawable/main_color_select"
+                android:drawableTop="@drawable/communicatebook_select"
+                android:text="通讯录"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onTabClicked"
+            android:layout_above="@+id/main_bottom"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

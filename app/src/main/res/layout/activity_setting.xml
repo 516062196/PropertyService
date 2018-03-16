@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.property.glory.propertyservice.activity.SettingActivity">
+    <include
+        layout="@layout/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+<RelativeLayout
+    android:id="@+id/rl_change"
+    android:layout_width="match_parent"
+
+    android:layout_height="53dp">
+    <ImageView
+        android:id="@+id/imgkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/key"
+        />
+    <TextView
+        android:layout_toRightOf="@+id/imgkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:text="密码修改"/>
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+       android:layout_marginRight="18dp"
+        android:src="@mipmap/in"
+        />
+</RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="退出登录"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_corners_shape"/>
+    </RelativeLayout>
+</LinearLayout>
